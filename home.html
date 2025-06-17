@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>FG.SYSTEMS - Inovação em cada linha</title>
+		<link rel="shortcut icon" href="./favico.png" type="image/x-icon" />
+		<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+		<!-- Google Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+		<style>
+			* {
+				font-family: 'Montserrat', sans-serif;
+				scroll-behavior: smooth;
+			}
+			.fade-in {
+				opacity: 0;
+				transform: translateY(30px);
+				transition: all 0.8s ease;
+			}
+			.fade-in.visible {
+				opacity: 1;
+				transform: translateY(0);
+			}
+			.header {
+				background-color: rgba(0, 0, 0, 0.5);
+			}
+			.glass-effect {
+				background: #ffffff00;
+				backdrop-filter: blur(10px);
+				border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+				transition: 0.3;
+			}
+		</style>
+	</head>
+	<body class="h-screen bg-gradient-to-b from-black to-gray-900 text-white">
+		<header class="fixed top-0 w-full z-50 py-2">
+			<div class="flex justify-between max-w-7xl mx-auto items-center container px-6 md:px-20 md:glass-effect">
+				<div class="w-35 h-15">
+					<img src="./logon.png" alt="" class="w-full h-full" />
+				</div>
+				<nav class="gap-8 hidden md:flex">
+					<a href="#home" class="hover:brightness-75 duration-300">Home</a>
+					<a href="#features" class="hover:brightness-75 duration-300">Features</a>
+					<a href="#about" class="hover:brightness-75 duration-300">Sobre</a>
+					<a href="#contact" class="hover:brightness-75 duration-300">Contato</a>
+				</nav>
+
+				<button class="md:hidden flex flex-col space-y-1 duration-300 rounded p-3 hover:bg-white/20">
+					<div class="w-6 h-1 bg-white rounded-full"></div>
+					<div class="w-6 h-1 bg-white rounded-full"></div>
+					<div class="w-6 h-1 bg-white rounded-full"></div>
+				</button>
+			</div>
+		</header>
+
+		<!-- Hero Section -->
+		<section id="home" class="relative h-screen grid place-items-center">
+			<div
+				class="absolute inset-0 opacity-5 mask-radial-from-0% -z-10"
+				style="
+					background-image: linear-gradient(to right, white 1px, transparent 1px), linear-gradient(to bottom, white 1px, transparent 1px);
+					background-size: 100px 100px;
+				"></div>
+
+			<div class="max-w-7xl mx-auto text-center space-y-10 px-4 fade-in">
+				<h1 class="text-4xl md:text-5xl font-bold max-w-xl mx-auto text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-300">
+					Soluções Premium<br />
+					em Software
+				</h1>
+				<p class="max-w-3xl text-gray-400">
+					Desenvolvemos sistemas de alta performance e design excepcional para empresas que exigem o máximo em tecnologia e sofisticação.
+				</p>
+				<button class="px-10 py-4 bg-white hover:bg-gray-300 text-black duration-300 font-medium">Começar Projeto</button>
+			</div>
+		</section>
+
+		<!-- Features Section -->
+		<section id="features" class="bg-gradient-to-b to-black from-gray-900 py-20 md:py-40">
+			<div class="container max-w-7xl mx-auto px-6 md:px-20 gap-4 fade-in">
+				<div class="text-center mb-20 mx-auto">
+					<h1 class="text-3xl font-bold mb-4 lg:text-4xl">Por que Escolher <br />FG.SYSTEMS</h1>
+					<p class="text-gray-400 max-w-3xl lg:mx-auto">Oferecemos tecnologia de ponta com design premium para empresas que não aceitam menos que a perfeição</p>
+				</div>
+
+				<!-- Feature Cards -->
+
+				<div class="grid gap-4 grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
+					<div class="bg-white/1 border border-gray-900/60 p-8 rounded group cursor-default group fade-in">
+						<div class="w-16 h-16 bg-white/5 rounded-2xl flex items-center justify-center mb-6 group-hover:rotate-12 transition-transform duration-300">
+							<span class="text-2xl text-black duration-300 group-hover:scale-130 group-hover:-rotate-12">⚡</span>
+						</div>
+						<h3 class="text-lg font-medium mb-2">Performance Extrema</h3>
+						<p class="text-gray-400 leading-relaxed">Sistemas otimizados com as mais avançadas técnicas de performance, garantindo velocidade e eficiência máximas.</p>
+					</div>
+
+					<div class="bg-white/1 border border-gray-900/60 p-8 rounded cursor-default group fade-in">
+						<div class="w-16 h-16 bg-white/5 rounded-2xl flex items-center justify-center mb-6 group-hover:rotate-12 transition-transform duration-300">
+							<span class="text-2xl text-black duration-300 group-hover:scale-130 group-hover:-rotate-12">🔒</span>
+						</div>
+						<h3 class="text-lg font-medium mb-2">Segurança Militar</h3>
+						<p class="text-gray-400 leading-relaxed">Protocolos de segurança de nível empresarial com criptografia avançada e proteção multicamadas.</p>
+					</div>
+
+					<div class="bg-white/1 border border-gray-900/60 p-8 rounded cursor-default group fade-in">
+						<div class="w-16 h-16 bg-white/5 rounded-2xl flex items-center justify-center mb-6 group-hover:rotate-12 transition-transform duration-300">
+							<span class="text-2xl text-black duration-300 group-hover:scale-130 group-hover:-rotate-12">💎</span>
+						</div>
+						<h3 class="text-lg font-medium mb-2">Design Premium</h3>
+						<p class="text-gray-400 leading-relaxed">Interfaces elegantes e sofisticadas que combinam funcionalidade superior com estética impecável.</p>
+					</div>
+
+					<div class="bg-white/1 border border-gray-900/60 p-8 rounded cursor-default group fade-in">
+						<div class="w-16 h-16 bg-white/5 rounded-2xl flex items-center justify-center mb-6 group-hover:rotate-12 transition-transform duration-300">
+							<span class="text-2xl text-black duration-300 group-hover:scale-130 group-hover:-rotate-12">💻</span>
+						</div>
+						<h3 class="text-lg font-medium mb-2">Tecnologia Avançada</h3>
+						<p class="text-gray-400 leading-relaxed">Utilizamos as mais recentes tecnologias e frameworks para criar soluções verdadeiramente inovadoras.</p>
+					</div>
+
+					<div class="bg-white/1 border border-gray-900/60 p-8 rounded cursor-default group fade-in">
+						<div class="w-16 h-16 bg-white/5 rounded-2xl flex items-center justify-center mb-6 group-hover:rotate-12 transition-transform duration-300">
+							<span class="text-2xl text-black duration-300 group-hover:scale-130 group-hover:-rotate-12">🎯</span>
+						</div>
+						<h3 class="text-lg font-medium mb-2">Precisão Absoluta</h3>
+						<p class="text-gray-400 leading-relaxed">Cada linha de código é meticulosamente escrita para entregar exatamente o que sua empresa precisa.</p>
+					</div>
+
+					<div class="bg-white/1 border border-gray-900/60 p-8 rounded cursor-default group fade-in">
+						<div class="w-16 h-16 bg-white/5 rounded-2xl flex items-center justify-center mb-6 group-hover:rotate-12 transition-transform duration-300">
+							<span class="text-2xl text-black duration-300 group-hover:scale-130 group-hover:-rotate-12">📞</span>
+						</div>
+						<h3 class="text-lg font-medium mb-2">Suporte VIP</h3>
+						<p class="text-gray-400 leading-relaxed">Atendimento exclusivo e prioritário com nossa equipe de especialistas disponível 24/7.</p>
+					</div>
+				</div>
+
+				<!-- <div class="w-full lg:w-1/3 lg:mask-r-from-0% mask-b-from-0%">
+					<img src="./coolbackgrounds-fractalize-cool_backgrounds.png" class="w-full h-full object-cover" alt="" />
+				</div> -->
+			</div>
+		</section>
+
+		<!-- About Section -->
+		<section class="py-20 lg:py-40 bg-gradient-to-b to-gray-900 from-black" id="about">
+			<div class="container md:px-20 max-w-7xl mx-auto px-6">
+				<div class="grid lg:grid-cols-2 gap-16 items-center">
+					<div class="fade-in">
+						<h2 class="text-4xl md:text-5xl font-bold mb-8">Sobre FG.SYSTEMS</h2>
+						<p class="text-xl text-gray-400 mb-6 leading-relaxed">
+							Somos especialistas em criar soluções de software para empresas que demandam excelência. Nossa expertise combina tecnologia de ponta com design
+							sofisticado.
+						</p>
+						<p class="text-lg text-gray-400 mb-8 leading-relaxed">
+							Com uma equipe altamente qualificada e processos refinados, entregamos sistemas que não apenas funcionam perfeitamente, mas elevam o padrão da sua
+							organização.
+						</p>
+
+						<!-- Stats -->
+						<div class="grid grid-cols-2 gap-8">
+							<div class="text-center">
+								<div class="text-4xl font-bold text-white mb-2" data-count="5">40</div>
+								<div class="text-gray-400 font-medium">Projetos</div>
+							</div>
+							<div class="text-center">
+								<div class="text-4xl font-bold text-white mb-2" data-count="1">3</div>
+								<div class="text-gray-400 font-medium">Anos</div>
+							</div>
+							<div class="text-center">
+								<div class="text-4xl font-bold text-white mb-2" data-count="12">20</div>
+								<div class="text-gray-400 font-medium">Clientes</div>
+							</div>
+							<div class="text-center">
+								<div class="text-4xl font-bold text-white mb-2">24/7</div>
+								<div class="text-gray-400 font-medium">Suporte</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="fade-in">
+						<div class="relative">
+							<!-- Premium Mockup -->
+
+							<div class="p-8 rounded premium-shadow animate-float relative">
+								<div
+									class="absolute inset-0 opacity-20 mask-radial-from-0%"
+									style="background-image: radial-gradient(circle at 25% 25%, white 1px, transparent 1px); background-size: 25px 25px"></div>
+
+								<div class="rounded p-6 h-80 flex flex-col justify-center items-center">
+									<div class="w-20 h-20 border-2 border-white/50 relative mb-4">
+										<div class="absolute inset-2 flex items-center justify-center">
+											<span class="text-white font-bold text-2xl">FG</span>
+										</div>
+									</div>
+									<h3 class="text-2xl font-bold text-white mb-2 text-center">Sistema Premium</h3>
+									<p class="text-gray-400 text-center">Interface Elegante e Sofisticada</p>
+									<div class="flex space-x-2 mt-4">
+										<div class="w-3 h-3 bg-white/70 rounded-full animate-pulse"></div>
+										<div class="w-3 h-3 bg-white/70 rounded-full animate-pulse" style="animation-delay: 0.2s"></div>
+										<div class="w-3 h-3 bg-white/70 rounded-full animate-pulse" style="animation-delay: 0.4s"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Team Section -->
+		<section class="py-20 md:py-40 bg-gray-900" id="team">
+			<div class="container max-w-7xl mx-auto px-6 md:px-20 gap-4 fade-in">
+				<div class="text-center mb-20 mx-auto">
+					<h1 class="text-3xl font-bold mb-4 lg:text-4xl">Nosso Time</h1>
+					<p class="text-gray-400 max-w-3xl lg:mx-auto">Oferecemos tecnologia de ponta com design premium para empresas que não aceitam menos que a perfeição</p>
+				</div>
+			</div>
+
+			<div class="flex justify-center gap-15 md:gap-20 lg:gap-40 items-center flex-col md:flex-row fade-in">
+				<div class="flex flex-col items-center text-center">
+					<div class="w-30 h-3- rounded-full overflow-hidden shadow-xl">
+						<img src="./noname.png" alt="" class="w-full h-full object-cover scale-110" />
+					</div>
+					<p class="font-bold mt-4 mb-1">Fabiano Gonçalves</p>
+					<p class="text-gray-400 text-sm">Fundador / CTO</p>
+				</div>
+				<div class="flex flex-col items-center text-center">
+					<div class="w-30 h-3- rounded-full overflow-hidden shadow-xl">
+						<img src="./images.jpeg" alt="" class="w-full h-full object-cover scale-110" />
+					</div>
+					<p class="font-bold mt-4 mb-1">Uagner Santos</p>
+					<p class="text-gray-400 text-sm">Desenvolvedor</p>
+				</div>
+				<div class="flex flex-col items-center text-center">
+					<div class="w-30 h-3- rounded-full overflow-hidden shadow-xl">
+						<img src="./346266796_211097218378731_7859174324610854929_n.jpeg" alt="" class="w-full h-full object-cover scale-110" />
+					</div>
+					<p class="font-bold mt-4 mb-1">Giovanna Salles</p>
+					<p class="text-gray-400 text-sm">Analista UI/UX</p>
+				</div>
+			</div>
+		</section>
+
+		<footer class="bg-gray-900 border-t border-white/10 pt-16 pb-8">
+			<div class="container md:px-20 max-w-7xl mx-auto px-6">
+				<div class="grid md:grid-cols-2 gap-8 mb-12 lg:grid-cols-4">
+					<div class="mx-auto mb-4 md:mb-0 md:mx-0">
+						<div class="flex items-center space-x-3 w-50 h-20">
+							<img src="./logon.png" alt="" class="w-full h-full" />
+						</div>
+						<p class="text-gray-400 leading-relaxed text-center md:text-left">Inovação em cada linha</p>
+					</div>
+
+					<div>
+						<h3 class="text-white font-bold text-lg mb-4">Serviços</h3>
+						<ul class="space-y-2">
+							<li><a href="#" class="text-gray-400 hover:text-white transition-colors text-sm">Desenvolvimento Web</a></li>
+							<li><a href="#" class="text-gray-400 hover:text-white transition-colors text-sm">Aplicações Mobile</a></li>
+							<li><a href="#" class="text-gray-400 hover:text-white transition-colors text-sm">Sistemas Corporativos</a></li>
+							<li><a href="#" class="text-gray-400 hover:text-white transition-colors text-sm">Consultoria Estratégica</a></li>
+						</ul>
+					</div>
+
+					<div>
+						<h3 class="text-white font-bold text-lg mb-4">Empresa</h3>
+						<ul class="space-y-2">
+							<li><a href="#" class="text-gray-400 hover:text-white transition-colors text-sm">Nossa História</a></li>
+							<li><a href="#" class="text-gray-400 hover:text-white transition-colors text-sm">Equipe Elite</a></li>
+							<li><a href="#" class="text-gray-400 hover:text-white transition-colors text-sm">Carreira</a></li>
+							<li><a href="#" class="text-gray-400 hover:text-white transition-colors text-sm">Blog Técnico</a></li>
+						</ul>
+					</div>
+
+					<div>
+						<h3 class="text-white font-bold text-lg mb-4">Contato</h3>
+						<ul class="space-y-2">
+							<li class="text-gray-400 text-sm">fbiano.machado@gmail.com</li>
+							<li class="text-gray-400 text-sm">(21) 98739-6653</li>
+							<li class="text-gray-400 text-sm">Niterói, RJ</li>
+							<li class="text-gray-400 text-sm">Atendimento 24/7</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="border-t border-white/10 pt-8 text-center">
+					<p class="text-gray-400 text-sm">© <span id="year"></span> FG.Systems. Todos os direitos reservados.</p>
+				</div>
+			</div>
+		</footer>
+
+		<script>
+			// Fade in animation
+			const observerOptions = {
+				threshold: 0.1,
+				rootMargin: '0px 0px -50px 0px',
+			};
+
+			const observer = new IntersectionObserver((entries) => {
+				entries.forEach((entry) => {
+					if (entry.isIntersecting) {
+						entry.target.classList.add('visible');
+					}
+				});
+			}, observerOptions);
+
+			document.querySelectorAll('.fade-in').forEach((el) => {
+				observer.observe(el);
+			});
+
+			window.addEventListener('scroll', () => {
+				console.log(window.scrollY);
+				const header = document.querySelectorAll('header')[0];
+				if (window.scrollY > 100) {
+					header.classList.add('glass-effect');
+				} else {
+					header.classList.remove('glass-effect');
+				}
+			});
+
+			window.onload = () => {
+				const yearElement = document.getElementById('year');
+				const currentYear = new Date().getFullYear();
+				yearElement.textContent = currentYear;
+			};
+		</script>
+	</body>
+</html>
